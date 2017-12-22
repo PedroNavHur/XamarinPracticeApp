@@ -14,9 +14,12 @@ namespace XamarinPractice1
     public partial class QuotesPage : ContentPage
     {
 
+
+
         public QuotesPage()
         {
             InitializeComponent();
+            label.Text = quotes[0];
         }
 
         string[] quotes = {

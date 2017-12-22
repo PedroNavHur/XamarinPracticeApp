@@ -10,15 +10,21 @@
     </ContentPage.Padding>
 
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout
+            HorizontalOptions="CenterAndExpand" >
             <Button
                 Text="Next"
                 Clicked="NextButton_Clicked"></Button>
             <Label
+                x:Name="label2"
+                Text="Some Quote"/>
+            <Slider
+                x:Name="slider"
+                Maximum="50"
+                Minimum="16"/>
+            <Label
                 x:Name="label"
-                Text="Welcome to Xamarin"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                Text="Some Quote"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
