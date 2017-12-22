@@ -8,10 +8,15 @@
             <On Platform="Android">20,30,20,20</On>
         </OnPlatform>
     </ContentPage.Padding>
-    
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Button
+                Text="Next"
+                Clicked="NextButton_Clicked"></Button>
+            <Label
+                x:Name="label"
+                Text="Welcome to Xamarin"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
