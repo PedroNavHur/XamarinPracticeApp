@@ -11,20 +11,22 @@
 
     <ContentPage.Content>
         <StackLayout
-            HorizontalOptions="CenterAndExpand" >
+            BindingContext="{x:Reference slider}">
             <Button
                 Text="Next"
                 Clicked="NextButton_Clicked"></Button>
             <Label
                 x:Name="label2"
-                Text="Some Quote"/>
+                 Text="{Binding Value,
+                StringFormat='Font Size is: {0:F0}'}"/>
             <Slider
                 x:Name="slider"
                 Maximum="50"
                 Minimum="16"/>
             <Label
                 x:Name="label"
-                Text="Some Quote"/>
+                Text="Some Quote"
+                FontSize="{Binding Value}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
