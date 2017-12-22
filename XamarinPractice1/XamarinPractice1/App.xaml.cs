@@ -13,7 +13,7 @@ namespace XamarinPractice1
 		{
 			InitializeComponent();
 
-			MainPage = new XamarinPractice1.MainPage();
+			MainPage = new QuotesPage();
 		}
 
 		protected override void OnStart ()
