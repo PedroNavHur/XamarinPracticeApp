@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinPractice1.AbsoluteLayoutExercise2">
+             x:Class="XamarinPractice1.AbsoluteLayoutExercise2"
+             Padding="0">
     <AbsoluteLayout>
         <Image
             AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
@@ -9,12 +10,45 @@
             Source="http://lorempixel.com/1920/1080/nature/7"
             Aspect="AspectFill"/>
         <Label
-            AbsoluteLayout.LayoutBounds="0.1, 0, 1, 0.2"
+            AbsoluteLayout.LayoutBounds="0, 0.05, 1, 0.2"
             AbsoluteLayout.LayoutFlags="All"
             Text="Relax"
             FontSize="30"
             HorizontalTextAlignment="Center"
-            TextColor="White"/>
-        
+            TextColor="White"
+            FontAttributes="Bold"/>
+        <BoxView
+            AbsoluteLayout.LayoutBounds="0, 1, 1, 0.15"
+            AbsoluteLayout.LayoutFlags="All"
+            Color="Black"
+            Opacity=".5"/>
+        <StackLayout
+            AbsoluteLayout.LayoutBounds="0, 1, 1, 0.15"
+            AbsoluteLayout.LayoutFlags="All"
+            Padding="30"
+            Orientation="Horizontal"
+            VerticalOptions="Center">
+            <Label
+                Text="Profile"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                FontSize="15"/>
+            <Label
+                Text="Meditate"
+                TextColor="White"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                FontSize="15"/>
+            <Label
+                Text="Themes"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                FontSize="15"/>
+
+
+        </StackLayout>
+
     </AbsoluteLayout>
 </ContentPage>
