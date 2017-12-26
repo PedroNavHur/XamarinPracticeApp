@@ -14,7 +14,7 @@ namespace XamarinPractice1
         {
             InitializeComponent();
 
-            MainPage = new AbsoluteLayoutExercise1();
+            MainPage = new AbsoluteLayoutExercise2();
 
 
         }
