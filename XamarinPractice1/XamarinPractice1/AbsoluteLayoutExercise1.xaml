@@ -2,11 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinPractice1.AbsoluteLayoutExercise1">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <AbsoluteLayout>
+        <BoxView
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3"
+            AbsoluteLayout.LayoutFlags="All"
+            Color="#ECEFF1"/>
+        <StackLayout
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3"
+            AbsoluteLayout.LayoutFlags="All">
+            <Label
+                Text="$11.95"
+                TextColor="#263238"/>
+            <Button
+                Text="Add $7.99 Credit"/>
         </StackLayout>
-    </ContentPage.Content>
+        
+
+    </AbsoluteLayout>
 </ContentPage>
