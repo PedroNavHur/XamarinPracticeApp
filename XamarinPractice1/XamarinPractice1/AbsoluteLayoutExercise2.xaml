@@ -4,8 +4,17 @@
              x:Class="XamarinPractice1.AbsoluteLayoutExercise2">
     <AbsoluteLayout>
         <Image
-             AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
             AbsoluteLayout.LayoutFlags="All"
-            Source="http://lorempixel.com/"/>
+            Source="http://lorempixel.com/1920/1080/nature/7"
+            Aspect="AspectFill"/>
+        <Label
+            AbsoluteLayout.LayoutBounds="0.1, 0, 1, 0.2"
+            AbsoluteLayout.LayoutFlags="All"
+            Text="Relax"
+            FontSize="30"
+            HorizontalTextAlignment="Center"
+            TextColor="White"/>
+        
     </AbsoluteLayout>
 </ContentPage>
